@@ -1,11 +1,11 @@
 require 'pry'
 
 class Song
-  attr_accessor :name, :artist, :genre
+  attr_accessor :name, :artist, :genre #this is saying that each instance of the Song class has a name, artist, and genre. 
 
-  @@count = 0
-  @@genres = []
-  @@artists = []
+  @@count = 0 # the Song class keeping track of the number of songs it creates, defined below!
+  @@genres = [] # keeping track of all genres of existing Song classes
+  @@artists = [] # Song class showing us artists pt 1 
 
   def initialize(song_name, artist, genre)
     @name = song_name
@@ -16,7 +16,7 @@ class Song
     @@artists << artist
   end
 
-  def self.count
+  def self.count # the count/number of how many instances of the Song class is being kept track of
     @@count
   end
 
@@ -24,7 +24,7 @@ class Song
     @@genres.uniq!
   end
 
-  def self.artists
+  def self.artists # Defining the artist of the instance of Song class pt 2
     @@artists.uniq!
   end
 
