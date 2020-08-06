@@ -20,7 +20,7 @@ class Song
     @name = song_name
     @artist = artist
     @genre = genre
-    @@count += 1
+    @@count += 1  # keeps track of number of artists by adding 1 to the counter for each new instance 
     @@genres << genre
     @@artists << artist
   end
@@ -29,7 +29,7 @@ class Song
     @@count
   end
 
-  def self.genres
+  def self.genres # be able to show all genres of existing songs
     @@genres.uniq!
   end
 
