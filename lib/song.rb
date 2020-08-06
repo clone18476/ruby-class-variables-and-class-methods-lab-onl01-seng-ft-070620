@@ -1,4 +1,13 @@
-require 'pry'
+.............................................................
+
+
+
+
+
+
+
+
+.require 'pry'
 
 class Song
   attr_accessor :name, :artist, :genre #this is saying that each instance of the Song class has a name, artist, and genre. 
